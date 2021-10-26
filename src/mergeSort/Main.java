@@ -32,7 +32,7 @@ public class Main {
         while (i<mid && j<end){
             temp[tempIndex++] = arry[i] <= arry[j] ? arry[i++] : arry[j++];
         }
-        System.arraycopy( arry ,i ,arry , start+tempIndex ,mid-1);
+        System.arraycopy( arry ,i ,arry , start+tempIndex ,mid-i);
         System.arraycopy( temp, 0 ,arry, start , tempIndex);
     }
 }
